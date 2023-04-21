@@ -1,0 +1,20 @@
+{
+    "name": "template",
+    "private": true,
+    "workspaces": {
+        "workspaces": [
+            "backend",
+            "frontend"
+        ],
+        "nohoist": [
+            "**/backend",
+            "**/backend/**",
+            "**/frontend",
+            "**/frontend/**"
+        ]
+    },
+    "scripts": {
+        "backend": "yarn workspace backend",
+        "frontend": "yarn workspace frontend"
+    }
+}
